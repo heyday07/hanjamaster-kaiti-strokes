@@ -10,7 +10,7 @@ made freely available, as a whole, to all third parties under the same license.
 - Its glyphs are derived from the fonts **AR PL KaitiM GB** and **AR PL UKai** by Arphic Technology Co., Ltd.,
   distributed under the Arphic Public License.
 
-## What was changed (2026-10-16, RedMoon Lab)
+## What was changed (2026-10-16, last updated 2026-10-30 — RedMoon Lab)
 
 - **Format**: each character from `graphics.txt` was converted to its own JSON file named by its code point
   (e.g. `5BB6.json` = 家), with the fields `strokes` (SVG path per stroke), `medians` (centre line per stroke)
@@ -25,13 +25,16 @@ made freely available, as a whole, to all third parties under the same license.
 
 ## Contents
 
-| Folder | Meaning |
-|---|---|
-| `data/kaiti/` | Glyph form matches the Korean standard form. Strokes ordered as in Korean stroke order. |
-| `data/kaiti_alt/` | Glyph form differs from the Korean standard form (shown only as an alternative). Stroke order unchanged from the source. |
+| Folder | Characters | Meaning |
+|---|---:|---|
+| `data/kaiti/` | 1,272 | Glyph form matches the Korean standard form. Strokes ordered as in Korean stroke order. |
+| `data/kaiti_alt/` | 213 | Glyph form differs from the Korean standard form (shown only as an alternative). Stroke order unchanged from the source. |
 
 `_index.json` in each folder lists the included code points. This repository contains only the files distributed
 in the app; it will be updated when the app ships more characters.
+
+The app currently ships the characters of grades 8급 through 3급II of the Korean Hanja Proficiency Test
+(한국어문회), reviewed one by one. Earlier releases shipped 8급–4급II (744 files, 2026-10-16).
 
 ## License
 
@@ -46,7 +49,8 @@ RedMoon Lab의 안드로이드 앱 **한자마스터**가 쓰는 '해서체' 획
 Arphic Public License 2조 b항(수정본을 누구나 같은 조건으로 자유롭게 받을 수 있게 할 것)에 따라 공개합니다.
 
 - 출처: Make Me a Hanzi `graphics.txt` (Arphic AR PL KaitiM GB / AR PL UKai 글꼴 파생)
-- 바꾼 것(2026-10-16): 글자별 JSON으로 변환, 일부 글자는 획 **순서**를 한국 필순에 맞게 재배열
+- 바꾼 것(2026-10-16, 2026-10-30 갱신): 글자별 JSON으로 변환, 일부 글자는 획 **순서**를 한국 필순에 맞게 재배열
   (획 모양·중심선·쓰는 방향은 원본 그대로), 일부 글자는 한국 표준 코드포인트로 저장
-- `data/kaiti/`: 한국 자형과 같은 글씨 / `data/kaiti_alt/`: 한국 자형과 다른 글씨(순서도 원본 그대로)
+- `data/kaiti/` 1,272자: 한국 자형과 같은 글씨 / `data/kaiti_alt/` 213자: 한국 자형과 다른 글씨(순서도 원본 그대로)
+- 수록 범위: 한국어문회 배정한자 8급~3급II(한 글자씩 검토해 반영). 2026-10-16 공개분은 8급~4급II 744자였습니다
 - 파일마다 `notice` 필드에 그 파일에 한 변경을 적어 두었습니다.
